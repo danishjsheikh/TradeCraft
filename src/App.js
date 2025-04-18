@@ -9,10 +9,12 @@ import ServicesPage from './pages/ServicesPage';
 import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Header />
         <main>
