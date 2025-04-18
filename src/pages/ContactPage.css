@@ -1,0 +1,225 @@
+/* Base Styles */
+.contact-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+}
+
+p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.contact-hero {
+  height: 50vh;
+  min-height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/farm_field.jpg") center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  margin-top: 85px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+}
+
+.contact-hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Contact Info & Form Section */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1 1 45%;
+}
+
+.contact-methods {
+  margin-top: 30px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-method i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #28a745;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.form-success {
+  text-align: center;
+}
+
+.form-success i {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #f7f7f7;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.about-text {
+  flex: 1 1 50%;
+}
+
+.about-images {
+  flex: 1 1 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Map Section */
+.map-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.map-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.map-box {
+  flex: 1 1 48%;
+}
+
+.map-box h3 {
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .contact-info,
+  .contact-form-container,
+  .about-text,
+  .about-images,
+  .map-box {
+    flex: 1 1 100%;
+  }
+
+  .about-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-hero h1 {
+    font-size: 32px;
+  }
+
+  .contact-hero p {
+    font-size: 16px;
+  }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

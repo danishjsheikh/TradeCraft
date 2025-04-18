@@ -1,0 +1,91 @@
+.certificates-hero {
+    height: 50vh;
+    min-height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(./assets/certificates_bg.png) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 85px;
+  }
+
+ 
+  
+  .certificates-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .certificates-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+  }
+  
+  .quality-commitment {
+    background-color: var(--light);
+  }
+  
+  .quality-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .quality-text {
+    flex: 1;
+  }
+  
+  .quality-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .quality-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  .quality-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quality-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .quality-content {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .certificates-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .certificates-hero p {
+      font-size: 1rem;
+    }
+    
+    .certificates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

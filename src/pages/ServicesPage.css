@@ -1,0 +1,117 @@
+.services-hero {
+    height: 50vh;
+    min-height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/services_bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 85px;
+  }
+  
+  .services-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .services-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .process-step:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 2px;
+    height: calc(100% + 30px);
+    background-color: var(--primary);
+  }
+  
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+  
+  .step-content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .step-content h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+  
+  .service-cta {
+    background-color: var(--light);
+  }
+  
+  .service-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .service-cta-content p {
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .services-hero p {
+      font-size: 1rem;
+    }
+  }
+  

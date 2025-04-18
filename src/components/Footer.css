@@ -1,0 +1,115 @@
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding-top: 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary);
+  }
+  
+  .footer-column p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    opacity: 1;
+    color: var(--secondary);
+    padding-left: 5px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  .contact-info li i {
+    margin-right: 10px;
+    color: var(--secondary);
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+  
