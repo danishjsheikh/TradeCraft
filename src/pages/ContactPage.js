@@ -6,6 +6,8 @@ import groceries from "./assets/groceries.jpg";
 import quality from "./assets/quality.webp";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+
 const containerStyle = {
   width: "100%",
   height: "400px",
@@ -338,7 +340,7 @@ const ContactPage = () => {
 
       <section className="map-section">
         <div className="map-container">
-          <LoadScript googleMapsApiKey="AIzaSyBx212SS8i684KD2JperyZkDqeJYRuKO88">
+          <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
             <div className="map-wrapper">
               {/* Maharashtra Office Map */}
               <div className="map-box">
