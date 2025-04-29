@@ -106,162 +106,162 @@ const ProductsPage = () => {
     // Plates
     {
       id: 13,
-      name: "12'' round plate",
+      name: "12″ round plate",
       description:
         "Eco-friendly large dinner plate made from fallen palm leaves.",
-      image: "/assets/round_plate_12.webp",
+      image: "/assets/products/plates/round_plate_12.webp",
       category: "plates",
     },
     {
       id: 14,
-      name: "Round Bamboo Plate",
+      name: "10″ Round Plate",
       description: "Lightweight and sturdy bamboo plate with natural texture.",
 
-      image: "/assets/plate-2.jpg",
+      image: "/assets/products/plates/round_plate_10.webp",
       category: "plates",
     },
     {
       id: 15,
-      name: "Square Areca Plate",
+      name: "10″x10″ Square Plate",
       description: "Biodegradable square plate ideal for serving main courses.",
 
-      image: "/assets/plate-3.jpg",
+      image: "assets/products/plates/square_plate_10_10.webp",
       category: "plates",
     },
     {
       id: 16,
-      name: "Banana Leaf Plate",
+      name: "9″ Round Plate",
       description:
         "Traditional Indian-style serving plate made from banana leaf.",
-      image: "/assets/plate-4.jpg",
+      image: "/assets/products/plates/round_plate_9.webp",
       category: "plates",
     },
     {
       id: 17,
-      name: "Decorative Coconut Plate",
+      name: "9″x9″ Square Plate",
       description:
         "Hand-carved coconut shell plate, great for display or dry items.",
 
-      image: "/assets/plate-5.jpg",
+      image: "/assets/products/plates/square_plate_9_9.webp",
       category: "plates",
     },
     {
       id: 18,
-      name: "Areca Oval Plate",
+      name: "8″ Round Plate",
       description: "Oval-shaped disposable plate ideal for snacks or desserts.",
-      image: "/assets/plate-6.jpg",
+      image: "/assets/products/plates/round_plate_8.webp",
       category: "plates",
     },
     {
       id: 19,
-      name: "Textured Bamboo Plate",
+      name: "8″×8″ Square Plate",
       description: "Unique textured plate crafted from natural bamboo.",
 
-      image: "/assets/plate-7.jpg",
+      image: "/assets/products/plates/square_plate_8_8.webp",
       category: "plates",
     },
     {
       id: 20,
-      name: "Palm Leaf Section Plate",
+      name: "7″ Round Plate",
       description: "3-compartment palm leaf plate for variety servings.",
-      image: "/assets/plate-8.jpg",
+      image: "/assets/products/plates/round_plate_7.webp",
       category: "plates",
     },
     {
       id: 21,
-      name: "Rustic Wooden Plate",
+      name: "7″×7″ Square Plate",
       description: "Solid wood plate with a rustic finish for stylish dining.",
-      image: "/assets/plate-9.jpg",
+      image: "/assets/products/plates/square_plate_7_7.webp",
       category: "plates",
     },
     {
       id: 22,
-      name: "Minimalist Plate",
+      name: "7″x8.5″ Rectangle Plate",
       description: "Smooth, uncoated eco plate perfect for all occasions.",
 
-      image: "/assets/plate-10.jpg",
+      image: "/assets/products/plates/rectangle_plate_7_8.5.webp",
       category: "plates",
     },
     {
       id: 23,
-      name: "Palm Compartment Plate",
+      name: "6″×6″ Square Plate",
       description:
         "Perfect for meals with sides, made from pressed palm leaves.",
-      image: "/assets/plate-11.jpg",
+      image: "/assets/products/plates/square_plate_6_6.webp",
       category: "plates",
     },
     {
       id: 24,
-      name: "Handcrafted Dinner Plate",
+      name: "4″×4″ Square Plate",
       description: "Beautiful artisan plate ideal for main course meals.",
 
-      image: "/assets/plate-12.jpg",
+      image: "/assets/products/plates/square_plate_4_4.webp",
       category: "plates",
     },
 
     // Bowls
     {
       id: 25,
-      name: "Coconut Shell Bowl",
+      name: "8″x8″ Square Bowl",
       description: "Polished coconut bowl for smoothie bowls or snacks.",
 
-      image: "/assets/bowl-1.jpg",
+      image: "/assets/products/bowls/square_bowl_8_8.webp",
       category: "bowls",
     },
     {
       id: 26,
-      name: "Bamboo Salad Bowl",
+      name: "6.5″ Rectangle Bowl",
       description: "Wide, deep bowl crafted from bamboo for salads.",
 
-      image: "/assets/bowl-2.jpg",
+      image: "/assets/products/bowls/rectangle_bowl_6.5.webp",
       category: "bowls",
     },
     {
       id: 27,
-      name: "Mini Serving Bowl",
+      name: "5″ Round Bowl",
       description: "Compact eco bowl for dips, sauces, or toppings.",
-      image: "/assets/bowl-3.jpg",
+      image: "/assets/products/bowls/round_bowl_5.webp",
       category: "bowls",
     },
     {
       id: 28,
-      name: "Lacquered Coconut Bowl",
+      name: "4″x4″ Deep Square Bowl",
       description: "Interior-painted bowl with glossy food-safe coating.",
 
-      image: "/assets/bowl-4.jpg",
+      image: "/assets/products/bowls/deep_square_bowl_4_4.webp",
       category: "bowls",
     },
     {
       id: 29,
-      name: "Areca Bowl",
+      name: "4″x4″ deep Bowl",
       description: "Round disposable bowl made from areca palm sheaths.",
-      image: "/assets/bowl-5.jpg",
+      image: "/assets/products/bowls/deep_bowl_4_4.webp",
       category: "bowls",
     },
     {
       id: 30,
-      name: "Wooden Soup Bowl",
+      name: "3″x3″ Square Bowl",
       description: "Natural wooden bowl perfect for hot soups and stews.",
 
-      image: "/assets/bowl-6.jpg",
+      image: "/assets/products/bowls/square_bowl_3_3.webp",
       category: "bowls",
     },
     {
       id: 31,
-      name: "Rustic Snack Bowl",
+      name: "3.5″ Round Bowl",
       description: "Earthy-style bowl ideal for dry snacks or fruits.",
 
-      image: "/assets/bowl-7.jpg",
+      image: "/assets/products/bowls/round_bowl_3.5.webp",
       category: "bowls",
     },
 
     // Tray
     {
       id: 32,
-      name: "Bamboo Serving Tray",
+      name: "6″x9″ Rectangle Tray",
       description:
         "Lightweight bamboo tray with handles, perfect for serving tea or snacks.",
-      image: "/assets/tray-1.jpg",
+      image: "/assets/products/trays/rectangle_tray_6_9.webp",
       category: "trays",
     },
   ];
