@@ -115,7 +115,17 @@ const ProductsPage = () => {
     {
       id: 14,
       name: "10″ Round Plate",
-      description: "Lightweight and sturdy bamboo plate with natural texture.",
+      description: `Lightweight and 
+      
+      
+      
+      qeflhqlehfiqehfiqfqhfi
+      qkejklqwjriqeoqiopeqkwlfnqef
+      aklhdjahfqgfueqgldjqeliejwqokeoqwe
+      
+      asfjhajfhajshfuqhdiqqqq
+      ajfdgagdfafadad
+      sturdy bamboo plate with natural texture.fusevbfsuhbfshbhs fhs uh fauh fuha fhae gjbuafbhfbhsfis`,
 
       image: "/assets/products/plates/round_plate_10.webp",
       category: "plates",
