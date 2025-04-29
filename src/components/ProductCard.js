@@ -38,9 +38,6 @@ const ProductCard = ({ product, delay = 0 }) => {
       <div className="product-info">
         <h3>{product.name}</h3>
         <p>{product.description}</p>
-        <div className="product-origin">
-          <i className="fas fa-map-marker-alt"></i> Origin: {product.origin}
-        </div>
         <button className="btn">View Details</button>
       </div>
     </div>

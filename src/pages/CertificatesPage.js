@@ -1,7 +1,6 @@
 import React from "react";
 import CertificateCard from "../components/CertificateCard";
 import "./CertificatesPage.css";
-import quality_inspection from "./assets/quality_inspection.png";
 
 const CertificatesPage = () => {
   const certificates = [
@@ -32,6 +31,13 @@ const CertificatesPage = () => {
       description:
         "Authorized with an Importer Exporter Code (IEC) for conducting international trade operations.",
       icon: "/certificates/TRADECRAFT_IEC.pdf",
+    },
+    {
+      id: 5,
+      name: "FSSAI License",
+      description:
+        "Authorized with FSSAI for food safety and Standards.",
+      icon: "/certificates/FSSAI LICENSE.pdf",
     },
   ];
 
@@ -86,7 +92,7 @@ const CertificatesPage = () => {
               </p>
             </div>
             <div className="quality-image">
-              <img src={quality_inspection} alt="Quality inspection" />
+              <img src="/assets/quality_inspection.png" alt="Quality inspection" />
             </div>
           </div>
         </div>

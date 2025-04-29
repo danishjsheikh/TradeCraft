@@ -4,8 +4,7 @@ import ProductCard from "../components/ProductCard";
 import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
-import farmers_working from "./assets/farmers-working.webp";
-import workers from "./assets/workers.jpg";
+
 
 const HomePage = () => {
   const featuredProducts = [
@@ -118,10 +117,10 @@ const HomePage = () => {
             </div>
             <div className="about-image" data-aos="fade-left">
               <div className="image-wrapper">
-                <img src={farmers_working} alt="Tradecraft farmers" />
+                <img src="/assets/farmers-working.webp" alt="Tradecraft farmers" />
               </div>
               <div className="image-wrapper">
-                <img src={workers} alt="Workers processing commodities" />
+                <img src="/assets/workers.jpg" alt="Workers processing commodities" />
               </div>
             </div>
           </div>

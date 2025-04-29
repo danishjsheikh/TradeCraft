@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
-import farm_field from "./assets/farm_field.jpg";
-import workers from "./assets/workers.jpg";
-import groceries from "./assets/groceries.jpg";
-import quality from "./assets/quality.webp";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
@@ -322,16 +318,19 @@ const ContactPage = () => {
             </div>
             <div className="about-images">
               <div className="about-image">
-                <img src={farm_field} alt="farm" />
+                <img src="/assets/farm_field.jpg" alt="farm" />
               </div>
               <div className="about-image">
-                <img src={workers} alt="Workers processing commodities" />
+                <img
+                  src="/assets/workers.jpg"
+                  alt="Workers processing commodities"
+                />
               </div>
               <div className="about-image">
-                <img src={groceries} alt="Groceries" />
+                <img src="/assets/groceries.jpg" alt="Groceries" />
               </div>
               <div className="about-image">
-                <img src={quality} alt="Quality inspection" />
+                <img src="/assets/quality.webp" alt="Quality inspection" />
               </div>
             </div>
           </div>
