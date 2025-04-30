@@ -37,24 +37,24 @@ const HomePage = () => {
   const services = [
     {
       id: 1,
-      title: "Bulk Supply",
+      title: "Sourcing & Procurement",
       description:
-        "We provide large scale supply solutions for restaurants, supermarkets and food manufacturers.",
-      icon: "fas fa-truck",
+        "Identifying and sourcing high-quality agricultural products from local farmers with international quality checks.",
+      icon: "fas fa-seedling",
     },
     {
       id: 2,
-      title: "Quality Assurance",
+      title: "Logistics & Supply Chain",
       description:
-        "Every product goes through rigorous quality checks before reaching our customers.",
-      icon: "fas fa-certificate",
+        "Coordinating transport, freight, and customs clearance for both sea and air shipments with timely delivery.",
+      icon: "fas fa-shipping-fast",
     },
     {
       id: 3,
-      title: "Global Delivery",
+      title: "Documentation & Compliance",
       description:
-        "We deliver our premium commodities to doorsteps across the globe.",
-      icon: "fas fa-globe",
+        "Managing export/import documents and ensuring compliance with global trade and safety standards.",
+      icon: "fas fa-file-alt",
     },
   ];
   console.log("App rendered");

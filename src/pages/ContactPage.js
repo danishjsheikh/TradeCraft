@@ -97,181 +97,78 @@ const ContactPage = () => {
           <p>Get in touch with our team for inquiries and support</p>
         </div>
       </div>
-
       <section className="contact-section section">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
+      <div className="container">
+        <div className="contact-grid-two-column">
+          {/* Left: Contact Info */}
+          <div className="contact-info-modern">
+            <h2>Get in Touch</h2>
+            <p>
+              We’re here to assist you with inquiries about our products,
+              services, or partnerships.
+            </p>
+
+            <div className="info-block">
+              <h3>Addresses</h3>
               <p>
-                Have questions about our products or services? Our team is here
-                to help you.
+                <strong>Maharashtra Office:</strong><br />
+                513, 5th Floor, Shree Samart Plaza, Gupta Bhavan, RRT Road, Opp. Mulund West Railway Station, Mumbai 400080
               </p>
-
-              <div className="contact-methods">
-                <div className="contact-method">
-                  <i className="fas fa-map-marker-alt"></i>
-                  <div>
-                    <h3>Address</h3>
-                    <p>
-                      Maharashtra: 513, 5th Floor, Shree Samart Plaza, Gupta
-                      Bhavan, RRT Road, Opp. Mulund West Railway Station, Mumbai
-                      400080
-                      <br />
-                      Karnataka: GRACE, 265-4(3), Mangala Colony, Off Alevoor
-                      Road, Manipal, Udupi District, Karnataka 576104.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="contact-method">
-                  <i className="fas fa-phone"></i>
-                  <div>
-                    <h3>Phone</h3>
-                    <p>+91 9819830716</p>
-                    <p>Tel: 0820-2575200</p>
-                  </div>
-                </div>
-
-                <div className="contact-method">
-                  <i className="fas fa-envelope"></i>
-                  <div>
-                    <h3>Email</h3>
-                    <p>morris@tradecraft.co.in</p>
-                    {/* <p>sales@tradecraft.com</p> */}
-                  </div>
-                </div>
-
-                <div className="contact-method">
-                  <i className="fas fa-clock"></i>
-                  <div>
-                    <h3>Working Hours</h3>
-                    <p>Monday - Friday: 9AM - 6PM</p>
-                    <p>Saturday: 10AM - 4PM</p>
-                  </div>
-                </div>
-              </div>
-              {/* 
-              <div className="social-links">
-                <h3>Follow Us</h3>
-                <div className="social-icons">
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div> */}
+              <p>
+                <strong>Karnataka Office:</strong><br />
+                GRACE, 265-4(3), Mangala Colony, Off Alevoor Road, Manipal, Udupi District, Karnataka 576104.
+              </p>
             </div>
 
-            <div className="contact-form-container">
-              {formSubmitted ? (
-                <div className="form-success">
-                  <i className="fas fa-check-circle"></i>
-                  <h3>Thank You!</h3>
-                  <p>
-                    Your message has been sent successfully. We'll get back to
-                    you soon.
-                  </p>
-                  <button
-                    className="btn"
-                    onClick={() => setFormSubmitted(false)}
-                  >
-                    Send Another Message
-                  </button>
-                </div>
-              ) : (
-                <>
-                  <h2>Send Us a Message</h2>
-                  <form className="contact-form" onSubmit={handleSubmit}>
-                    <div className="form-group">
-                      <label htmlFor="name">Name*</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className={formErrors.name ? "error" : ""}
-                      />
-                      {formErrors.name && (
-                        <span className="error-message">{formErrors.name}</span>
-                      )}
-                    </div>
+            <div className="info-block">
+              <h3>Contact</h3>
+              <p>
+                <strong>Phone:</strong> <a href="tel:+919819830716">+91 9819830716</a>
+              </p>
+              <p>
+                <strong>Tel:</strong> <a href="tel:+918202575200">0820-2575200</a>
+              </p>
+              <p>
+                <strong>Email:</strong> <a href="mailto:morris@tradecraft.co.in">morris@tradecraft.co.in</a>
+              </p>
+            </div>
 
-                    <div className="form-group">
-                      <label htmlFor="email">Email*</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className={formErrors.email ? "error" : ""}
-                      />
-                      {formErrors.email && (
-                        <span className="error-message">
-                          {formErrors.email}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="phone">Phone</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="subject">Subject</label>
-                      <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="message">Message*</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className={formErrors.message ? "error" : ""}
-                      ></textarea>
-                      {formErrors.message && (
-                        <span className="error-message">
-                          {formErrors.message}
-                        </span>
-                      )}
-                    </div>
-
-                    <button type="submit" className="btn">
-                      Send Message
-                    </button>
-                  </form>
-                </>
-              )}
+            <div className="info-block">
+              <h3>Working Hours</h3>
+              <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+              <p>Sat: 10:00 AM – 4:00 PM</p>
             </div>
           </div>
+
+          {/* Right: Maps */}
+          <div className="contact-maps">
+            <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
+              <div className="map-box">
+                <h4>Maharashtra Office</h4>
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={locations[0].position}
+                  zoom={14}
+                >
+                  <Marker position={locations[0].position} />
+                </GoogleMap>
+              </div>
+              <div className="map-box">
+                <h4>Karnataka Office</h4>
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={locations[1].position}
+                  zoom={14}
+                >
+                  <Marker position={locations[1].position} />
+                </GoogleMap>
+              </div>
+            </LoadScript>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       <section className="about-section section">
         <div className="container">
@@ -337,44 +234,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="map-section">
-        <div className="map-container">
-          <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
-            <div className="map-wrapper">
-              {/* Maharashtra Office Map */}
-              <div className="map-box">
-                <h3>Maharashtra Office</h3>
-                <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={locations[0].position}
-                  zoom={14}
-                >
-                  <Marker
-                    position={locations[0].position}
-                    label={locations[0].label}
-                  />
-                </GoogleMap>
-              </div>
-
-              {/* Karnataka Office Map */}
-              <div className="map-box">
-                <h3>Karnataka Office</h3>
-                <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={locations[1].position}
-                  zoom={14}
-                >
-                  <Marker
-                    position={locations[1].position}
-                    label={locations[1].label}
-                  />
-                </GoogleMap>
-              </div>
-            </div>
-          </LoadScript>
-        </div>
-      </section>
-    </div>
+      </div>
   );
 };
 

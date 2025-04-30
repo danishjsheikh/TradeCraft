@@ -223,3 +223,46 @@ textarea {
     width: 100%;
   }
 }
+
+.contact-grid-two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info-modern {
+  flex: 1 1 45%;
+}
+
+.contact-maps {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-block {
+  margin-bottom: 25px;
+}
+
+.info-block h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.map-box h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-info-modern a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-info-modern a:hover {
+  text-decoration: underline;
+}
