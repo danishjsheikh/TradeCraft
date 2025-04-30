@@ -14,7 +14,7 @@ const ProductsPage = () => {
       description:
         "Cold-pressed virgin coconut oil with rich aroma and flavor.",
 
-      image: "/assets/coconut-oil.jpg",
+      image: ["/assets/coconut-oil.jpg"],
       category: "coconut",
     },
     {
@@ -22,7 +22,7 @@ const ProductsPage = () => {
       name: "Coconut Flour",
       description: "Gluten-free flour made from dried coconut meat.",
 
-      image: "/assets/coconut-flour.jpg",
+      image: ["/assets/coconut-flour.jpg"],
       category: "coconut",
     },
     {
@@ -30,14 +30,14 @@ const ProductsPage = () => {
       name: "Coconut Sugar",
       description: "Natural sweetener made from coconut palm sap.",
 
-      image: "/assets/coconut-sugar.jpg",
+      image: ["/assets/coconut-sugar.jpg"],
       category: "coconut",
     },
     {
       id: 4,
       name: "Basmati Rice",
       description: "Premium long-grain aromatic rice.",
-      image: "/assets/basmati-rice.jpg",
+      image: ["/assets/basmati-rice.jpg"],
       category: "rice",
     },
     {
@@ -45,7 +45,7 @@ const ProductsPage = () => {
       name: "Jasmine Rice",
       description: "Fragrant rice with a subtle floral aroma.",
 
-      image: "/assets/jasmine-rice.jpg",
+      image: ["/assets/jasmine-rice.jpg"],
       category: "rice",
     },
     {
@@ -53,14 +53,14 @@ const ProductsPage = () => {
       name: "Brown Rice",
       description: "Whole grain rice with nutty flavor and chewy texture.",
 
-      image: "/assets/brown-rice.jpg",
+      image: ["/assets/brown-rice.jpg"],
       category: "rice",
     },
     {
       id: 7,
       name: "Red Onions",
       description: "Medium-sized onions with purple-red skin and mild flavor.",
-      image: "/assets/red-onions.jpg",
+      image: ["/assets/red-onions.jpg"],
       category: "onion",
     },
     {
@@ -69,7 +69,7 @@ const ProductsPage = () => {
       description:
         "All-purpose onions with golden skin and sweet flavor when cooked.",
 
-      image: "/assets/yellow-onions.jpg",
+      image: ["/assets/yellow-onions.jpg"],
       category: "onion",
     },
     {
@@ -77,7 +77,7 @@ const ProductsPage = () => {
       name: "Fresh Mangoes",
       description: "Sweet, juicy tropical fruit with vibrant flavor.",
 
-      image: "/assets/mangoes.jpg",
+      image: ["/assets/mangoes.jpg"],
       category: "fruits",
     },
     {
@@ -85,21 +85,21 @@ const ProductsPage = () => {
       name: "Bananas",
       description: "Energy-rich fruit perfect for quick snacks.",
 
-      image: "/assets/bananas.jpg",
+      image: ["/assets/bananas.jpg"],
       category: "fruits",
     },
     {
       id: 11,
       name: "Organic Quinoa",
       description: "Protein-rich ancient grain with a nutty flavor.",
-      image: "/assets/quinoa.jpg",
+      image: ["/assets/quinoa.jpg"],
       category: "others",
     },
     {
       id: 12,
       name: "Organic Honey",
       description: "Pure, unfiltered honey from wildflower meadows.",
-      image: "/assets/honey.jpg",
+      image: ["/assets/honey.jpg"],
       category: "others",
     },
 
@@ -115,7 +115,10 @@ const ProductsPage = () => {
       <p><strong>Dimension</strong>: 12 inches in diameter / 1 inch deep</p>
       <p><strong>Best suited to serve</strong>: Main course</p>
 `,
-      image: "/assets/products/plates/round_plate_12.webp",
+      image: [
+              "/assets/products/plates/round_plate_12.webp",
+              "/assets/products/plates/round_plate_12_1.webp"
+            ],
       category: "plates",
     },
     {
@@ -128,7 +131,7 @@ const ProductsPage = () => {
       <p><strong>Dimension</strong>: 10 inches in diameter / 0.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Main course, Buffet</p>`,
 
-      image: "/assets/products/plates/round_plate_10.webp",
+      image: ["/assets/products/plates/round_plate_10.webp"],
       category: "plates",
     },
     {
@@ -138,7 +141,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 10 x 10 x 0.5 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Main course, Buffet</p>`,
-      image: "assets/products/plates/square_plate_10_10.webp",
+      image: ["assets/products/plates/square_plate_10_10.webp"],
       category: "plates",
     },
     {
@@ -150,7 +153,7 @@ const ProductsPage = () => {
       heightened layer to make them spill proof. The product is child friendly.</p>
       <p><strong>Dimension</strong>: 9 inches in diameter / 0.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Main course, Pizza, Parathas</p>`,
-      image: "/assets/products/plates/round_plate_9.webp",
+      image: ["/assets/products/plates/round_plate_9.webp"],
       category: "plates",
     },
     {
@@ -160,7 +163,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 9 x 9 x 0.5 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Main course, Pizza, Parathas</p>`,      
-      image: "/assets/products/plates/square_plate_9_9.webp",
+      image: ["/assets/products/plates/square_plate_9_9.webp"],
       category: "plates",
     },
     {
@@ -172,7 +175,7 @@ const ProductsPage = () => {
       heightened layer to make them spill proof. The product is child friendly.</p>
       <p><strong>Dimension</strong>: 8 inches in diameter / 0.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Pizza, Salads, Fast foods</p>`,
-      image: "/assets/products/plates/round_plate_8.webp",
+      image: ["/assets/products/plates/round_plate_8.webp"],
       category: "plates",
     },
     {
@@ -182,7 +185,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 8 x 8 x 0.5 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Pizza, Salads, Fast foods</p>`,
-      image: "/assets/products/plates/square_plate_8_8.webp",
+      image: ["/assets/products/plates/square_plate_8_8.webp"],
       category: "plates",
     },
     {
@@ -194,7 +197,7 @@ const ProductsPage = () => {
       heightened layer to make them spill proof. The product is child friendly.</p>
       <p><strong>Dimension</strong>: 7 inches diameter / 0.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,
-      image: "/assets/products/plates/round_plate_7.webp",
+      image: ["/assets/products/plates/round_plate_7.webp"],
       category: "plates",
     },
     {
@@ -204,7 +207,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 7 x 7 x 0.5 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,
-      image: "/assets/products/plates/square_plate_7_7.webp",
+      image: ["/assets/products/plates/square_plate_7_7.webp"],
       category: "plates",
     },
     {
@@ -215,7 +218,7 @@ const ProductsPage = () => {
       The product is child friendly.</p>
       <p><strong>Dimension</strong>: 7 x 8.5 x 0.5 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Burger meals, Kebabs</p>`,      
-      image: "/assets/products/plates/rectangle_plate_7_8.5.webp",
+      image: ["/assets/products/plates/rectangle_plate_7_8.5.webp"],
       category: "plates",
     },
     {
@@ -225,7 +228,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 6 x 6 x 0.5 inches (LxBxH)</p>
       <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,      
-      image: "/assets/products/plates/square_plate_6_6.webp",
+      image: ["/assets/products/plates/square_plate_6_6.webp"],
       category: "plates",
     },
     {
@@ -235,7 +238,7 @@ const ProductsPage = () => {
       They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
       <p><strong>Dimension</strong>: 4 x 4 x 0.5 inches (LxBxH)</p>
       <p><strong>Best suited to serve</strong>: Desserts, Sweets, Chutney, Sauce</p>`,
-      image: "/assets/products/plates/square_plate_4_4.webp",
+      image: ["/assets/products/plates/square_plate_4_4.webp"],
       category: "plates",
     },
 
@@ -247,7 +250,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 8 x 8 x 1 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Sandwiches, Noodles, Salads</p>`,
-      image: "/assets/products/bowls/square_bowl_8_8.webp",
+      image: ["/assets/products/bowls/square_bowl_8_8.webp"],
       category: "bowls",
     },
     {
@@ -257,7 +260,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is completely spill and leak proof.</p>
       <p><strong>Dimension</strong>: 6.5 x 6.5 x 2 inches</p>
       <p><strong>Best suited to serve</strong>: Biryani, North Indian Dishes, Chinese Rice/Noodles</p>`,      
-      image: "/assets/products/bowls/rectangle_bowl_6.5.webp",
+      image: ["/assets/products/bowls/rectangle_bowl_6.5.webp"],
       category: "bowls",
     },
     {
@@ -267,7 +270,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers; hot or cold. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 5 inches diameter/ 1.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Soups, Curry, Sambaar</p>`,      
-      image: "/assets/products/bowls/round_bowl_5.webp",
+      image: ["/assets/products/bowls/round_bowl_5.webp"],
       category: "bowls",
     },
     {
@@ -277,7 +280,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 4 x 4 x 1 inches (LxBxH)</p>
       <p><strong>Best suited to serve</strong>: Fruits, Sweets, Chutney, Sambaar, Curry</p>`,      
-      image: "/assets/products/bowls/deep_square_bowl_4_4.webp",
+      image: ["/assets/products/bowls/deep_square_bowl_4_4.webp"],
       category: "bowls",
     },
     {
@@ -287,7 +290,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 4 x 4 x 0.75 inches (LxBxH)</p>
       <p><strong>Best suited to serve</strong>: Fruits, Sweets, Chutney, Sambaar, Curry</p>`,      
-      image: "/assets/products/bowls/deep_bowl_4_4.webp",
+      image: ["/assets/products/bowls/deep_bowl_4_4.webp"],
       category: "bowls",
     },
     {
@@ -297,7 +300,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 3 x 3 x 1 inches (LxBxH)</p>
       <p><strong>Best suited to serve</strong>: Ice cream, Desserts, Sweets, Chutney, Sauce, Raita</p>`,      
-      image: "/assets/products/bowls/square_bowl_3_3.webp",
+      image: ["/assets/products/bowls/square_bowl_3_3.webp"],
       category: "bowls",
     },
     {
@@ -307,7 +310,7 @@ const ProductsPage = () => {
       They can be used to serve any kind of side-dish, dessert or even store leftovers; hot or cold. The product is spill and leak proof.</p>
       <p><strong>Dimension</strong>: 3.5 inches in diameter / 1.5 inches deep</p>
       <p><strong>Best suited to serve</strong>: Ice cream, Desserts, Sweet, Chutney, Sauce, Raita</p>`,
-      image: "/assets/products/bowls/round_bowl_3.5.webp",
+      image: ["/assets/products/bowls/round_bowl_3.5.webp"],
       category: "bowls",
     },
 
@@ -319,7 +322,7 @@ const ProductsPage = () => {
       Though light weighted, they are sturdy, tear proof and spill proof.</p>
       <p><strong>Dimension</strong>: 6 x 9 x 1 inche(s)</p>
       <p><strong>Best suited to serve</strong>: Burgers, Sandwiches, Fast foods</p>`,      
-      image: "/assets/products/trays/rectangle_tray_6_9.webp",
+      image: ["/assets/products/trays/rectangle_tray_6_9.webp"],
       category: "trays",
     },
   ];
