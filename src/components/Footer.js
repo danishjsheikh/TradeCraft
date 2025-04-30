@@ -76,10 +76,10 @@ const Footer = () => {
               </p>
             </li>
             <li>
-              <i className="fas fa-phone"></i> +91 9819830716
+              <i className="fas fa-phone"></i> <a href="tel:+919819830716">+91 9819830716</a>
             </li>
             <li>
-              <i className="fas fa-envelope"></i> morris@tradecraft.co.in
+              <i className="fas fa-envelope"></i> <a href="mailto:morris@tradecraft.co.in">morris@tradecraft.co.in</a>
             </li>
           </ul>
         </div>
