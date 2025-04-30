@@ -107,15 +107,26 @@ const ProductsPage = () => {
     {
       id: 13,
       name: "12″ round plate",
-      description:
-        "Eco-friendly large dinner plate made from fallen palm leaves.",
+      description: `
+      <p>Round shaped plates can be used to serve a large quantity of food and are aesthetic. 
+      They are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a 
+      heightened layer to make them spill proof. The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 12 inches in diameter / 1 inch deep</p>
+      <p><strong>Best suited to serve</strong>: Main course</p>
+`,
       image: "/assets/products/plates/round_plate_12.webp",
       category: "plates",
     },
     {
       id: 14,
       name: "10″ Round Plate",
-      description: "Lightweight and ",
+      description: `<p>Round shaped plates can be used to serve a large quantity of food and are aesthetic. 
+      They are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a 
+      heightened layer to make them spill proof. The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 10 inches in diameter / 0.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Main course, Buffet</p>`,
 
       image: "/assets/products/plates/round_plate_10.webp",
       category: "plates",
@@ -123,78 +134,107 @@ const ProductsPage = () => {
     {
       id: 15,
       name: "10″x10″ Square Plate",
-      description: "Biodegradable square plate ideal for serving main courses.",
-
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 10 x 10 x 0.5 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Main course, Buffet</p>`,
       image: "assets/products/plates/square_plate_10_10.webp",
       category: "plates",
     },
     {
       id: 16,
       name: "9″ Round Plate",
-      description:
-        "Traditional Indian-style serving plate made from banana leaf.",
+      description: `<p>Round shaped plates can be used to serve a large quantity of food and are aesthetic. 
+      They are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a 
+      heightened layer to make them spill proof. The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 9 inches in diameter / 0.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Main course, Pizza, Parathas</p>`,
       image: "/assets/products/plates/round_plate_9.webp",
       category: "plates",
     },
     {
       id: 17,
       name: "9″x9″ Square Plate",
-      description:
-        "Hand-carved coconut shell plate, great for display or dry items.",
-
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 9 x 9 x 0.5 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Main course, Pizza, Parathas</p>`,      
       image: "/assets/products/plates/square_plate_9_9.webp",
       category: "plates",
     },
     {
       id: 18,
       name: "8″ Round Plate",
-      description: "Oval-shaped disposable plate ideal for snacks or desserts.",
+      description: `<p>Round shaped plates can be used to serve a large quantity of food and are aesthetic. 
+      They are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a 
+      heightened layer to make them spill proof. The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 8 inches in diameter / 0.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Pizza, Salads, Fast foods</p>`,
       image: "/assets/products/plates/round_plate_8.webp",
       category: "plates",
     },
     {
       id: 19,
       name: "8″×8″ Square Plate",
-      description: "Unique textured plate crafted from natural bamboo.",
-
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 8 x 8 x 0.5 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Pizza, Salads, Fast foods</p>`,
       image: "/assets/products/plates/square_plate_8_8.webp",
       category: "plates",
     },
     {
       id: 20,
       name: "7″ Round Plate",
-      description: "3-compartment palm leaf plate for variety servings.",
+      description: `<p>Round shaped plates can be used to serve a large quantity of food and are aesthetic. 
+      They are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a 
+      heightened layer to make them spill proof. The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 7 inches diameter / 0.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,
       image: "/assets/products/plates/round_plate_7.webp",
       category: "plates",
     },
     {
       id: 21,
       name: "7″×7″ Square Plate",
-      description: "Solid wood plate with a rustic finish for stylish dining.",
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 7 x 7 x 0.5 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,
       image: "/assets/products/plates/square_plate_7_7.webp",
       category: "plates",
     },
     {
       id: 22,
       name: "7″x8.5″ Rectangle Plate",
-      description: "Smooth, uncoated eco plate perfect for all occasions.",
-
+      description: `<p>Rectangle shaped plates are aesthetic and perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them spill proof. 
+      The product is child friendly.</p>
+      <p><strong>Dimension</strong>: 7 x 8.5 x 0.5 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Burger meals, Kebabs</p>`,      
       image: "/assets/products/plates/rectangle_plate_7_8.5.webp",
       category: "plates",
     },
     {
       id: 23,
       name: "6″×6″ Square Plate",
-      description:
-        "Perfect for meals with sides, made from pressed palm leaves.",
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 6 x 6 x 0.5 inches (LxBxH)</p>
+      <p><strong>Best suited to serve</strong>: Chaats, Sandwiches, Fries, Burger</p>`,      
       image: "/assets/products/plates/square_plate_6_6.webp",
       category: "plates",
     },
     {
       id: 24,
       name: "4″×4″ Square Plate",
-      description: "Beautiful artisan plate ideal for main course meals.",
-
+      description: `<p>Spill and leaf proof square shaped plates are perfect for serving all kinds of food – breakfast, brunch, lunch and dinner. 
+      They are hassle free, user friendly and light weighted. The plates are bordered with a heightened layer to make them comfortable for use.</p>
+      <p><strong>Dimension</strong>: 4 x 4 x 0.5 inches (LxBxH)</p>
+      <p><strong>Best suited to serve</strong>: Desserts, Sweets, Chutney, Sauce</p>`,
       image: "/assets/products/plates/square_plate_4_4.webp",
       category: "plates",
     },
@@ -203,54 +243,70 @@ const ProductsPage = () => {
     {
       id: 25,
       name: "8″x8″ Square Bowl",
-      description: "Polished coconut bowl for smoothie bowls or snacks.",
-
+      description: `<p>Square shaped bowls, shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 8 x 8 x 1 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Sandwiches, Noodles, Salads</p>`,
       image: "/assets/products/bowls/square_bowl_8_8.webp",
       category: "bowls",
     },
     {
       id: 26,
       name: "6.5″ Rectangle Bowl",
-      description: "Wide, deep bowl crafted from bamboo for salads.",
-
+      description: `<p>Rectangle shaped bowls are shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is completely spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 6.5 x 6.5 x 2 inches</p>
+      <p><strong>Best suited to serve</strong>: Biryani, North Indian Dishes, Chinese Rice/Noodles</p>`,      
       image: "/assets/products/bowls/rectangle_bowl_6.5.webp",
       category: "bowls",
     },
     {
       id: 27,
       name: "5″ Round Bowl",
-      description: "Compact eco bowl for dips, sauces, or toppings.",
+      description: `<p>Round shaped bowls are shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers; hot or cold. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 5 inches diameter/ 1.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Soups, Curry, Sambaar</p>`,      
       image: "/assets/products/bowls/round_bowl_5.webp",
       category: "bowls",
     },
     {
       id: 28,
       name: "4″x4″ Deep Square Bowl",
-      description: "Interior-painted bowl with glossy food-safe coating.",
-
+      description: `<p>Square shaped bowls, shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 4 x 4 x 1 inches (LxBxH)</p>
+      <p><strong>Best suited to serve</strong>: Fruits, Sweets, Chutney, Sambaar, Curry</p>`,      
       image: "/assets/products/bowls/deep_square_bowl_4_4.webp",
       category: "bowls",
     },
     {
       id: 29,
       name: "4″x4″ deep Bowl",
-      description: "Round disposable bowl made from areca palm sheaths.",
+      description: `<p>Square shaped bowls, shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 4 x 4 x 0.75 inches (LxBxH)</p>
+      <p><strong>Best suited to serve</strong>: Fruits, Sweets, Chutney, Sambaar, Curry</p>`,      
       image: "/assets/products/bowls/deep_bowl_4_4.webp",
       category: "bowls",
     },
     {
       id: 30,
       name: "3″x3″ Square Bowl",
-      description: "Natural wooden bowl perfect for hot soups and stews.",
-
+      description: `<p>Square shaped bowls, shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 3 x 3 x 1 inches (LxBxH)</p>
+      <p><strong>Best suited to serve</strong>: Ice cream, Desserts, Sweets, Chutney, Sauce, Raita</p>`,      
       image: "/assets/products/bowls/square_bowl_3_3.webp",
       category: "bowls",
     },
     {
       id: 31,
       name: "3.5″ Round Bowl",
-      description: "Earthy-style bowl ideal for dry snacks or fruits.",
-
+      description: `<p>Round shaped bowls are shaped to fit an average palm size and are light weighted and user friendly. 
+      They can be used to serve any kind of side-dish, dessert or even store leftovers; hot or cold. The product is spill and leak proof.</p>
+      <p><strong>Dimension</strong>: 3.5 inches in diameter / 1.5 inches deep</p>
+      <p><strong>Best suited to serve</strong>: Ice cream, Desserts, Sweet, Chutney, Sauce, Raita</p>`,
       image: "/assets/products/bowls/round_bowl_3.5.webp",
       category: "bowls",
     },
@@ -259,8 +315,10 @@ const ProductsPage = () => {
     {
       id: 32,
       name: "6″x9″ Rectangle Tray",
-      description:
-        "Lightweight bamboo tray with handles, perfect for serving tea or snacks.",
+      description: `<p>Rectangle shaped trays can be used to serve smaller bowls and beverages, or organize a display palette. 
+      Though light weighted, they are sturdy, tear proof and spill proof.</p>
+      <p><strong>Dimension</strong>: 6 x 9 x 1 inche(s)</p>
+      <p><strong>Best suited to serve</strong>: Burgers, Sandwiches, Fast foods</p>`,      
       image: "/assets/products/trays/rectangle_tray_6_9.webp",
       category: "trays",
     },

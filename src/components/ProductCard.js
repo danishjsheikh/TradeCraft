@@ -35,7 +35,7 @@ const ProductCard = ({ product, delay = 0 }) => {
         </div>
         <div className="product-info">
           <h3>{product.name}</h3>
-          <p>{product.description}</p>
+          <div className="product-description" dangerouslySetInnerHTML={{ __html: product.description }}></div>
           <button className="btn" onClick={() => setShowModal(true)}>View Details</button>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ProductCard = ({ product, delay = 0 }) => {
             <button className="close-btn" onClick={() => setShowModal(false)}>&times;</button>
             <img src={product.image} alt={product.name} className="modal-image" />
             <h2>{product.name}</h2>
-            <p>{product.description}</p>
+             <div className="product-description" dangerouslySetInnerHTML={{ __html: product.description }}></div>
           </div>
         </div>
       )}
