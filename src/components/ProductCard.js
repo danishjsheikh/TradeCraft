@@ -68,12 +68,16 @@ const ProductCard = ({ product, delay = 0 }) => {
                 alt={product.name}
                 className="modal-image"
               />
-              <button className="prev-btn" onClick={handlePrevImage}>
-                &#8249;
-              </button>
-              <button className="next-btn" onClick={handleNextImage}>
-                &#8250;
-              </button>
+              {(images.length > 1) ? (
+                <>
+                  <button className="prev-btn" onClick={handlePrevImage}>
+                    &#8249;
+                  </button>
+                  <button className="next-btn" onClick={handleNextImage}>
+                    &#8250;
+                  </button>
+                </>) : (<></>)
+              }
             </div>
             <h2>{product.name}</h2>
             <div className="product-description" dangerouslySetInnerHTML={{ __html: product.description }}></div>
