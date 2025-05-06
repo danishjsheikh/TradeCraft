@@ -10,97 +10,215 @@ const ProductsPage = () => {
   const products = [
     {
       id: 1,
-      name: "Virgin Coconut Oil",
-      description:
-        "Cold-pressed virgin coconut oil with rich aroma and flavor.",
+      name: "Semi Husked Coconuts",
+      description: `
+      <p>Semi husked coconuts are mature coconuts with the outer green husk partially removed, leaving the hard shell intact while retaining some of the fibrous coir. 
+      This makes them ideal for export as they are more compact than fully husked coconuts, while still offering protection to the inner shell and water content.
+      These coconuts are naturally rich in coconut water and have thick, firm white meat, making them ideal for various culinary and industrial purposes. 
+      They are harvested in a matured state and selected carefully for quality, weight, and shelf life.</p>
+      
+      <p><strong>Uses</strong>: Consumption, Cooking, Rituals, Cosmetics, Processing, Export</p>
+      
+      <p>🥥 <strong>Standard Export Packing Methods</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Capacity: Typically hold 25 coconuts per bag.<br>
+      Weight: Each bag weighs approximately 13–14 kg.<br>
+      Features: Durable, moisture-resistant, and suitable for long-distance transportation.
+      </br>
+      <strong>2. Gunny (Jute) Bags</strong><br>
+      Capacity: Also accommodate around 25 coconuts per bag.<br>
+      Weight: Similar to PP bags, each weighs about 13–14 kg.<br>
+      Features: Eco-friendly and breathable, allowing air circulation to prevent mold.
+      </br>
+      <strong>3. Palletized Packing</strong><br>
+      Configuration: Bags are stacked on wooden pallets, typically 50 bags per pallet.<br>
+      Container Load: A 40-foot reefer container can hold approximately 20 pallets, totaling around 1,000 bags or 25,000 kg of coconuts.<br>
+      Advantages: Facilitates easy loading/unloading and complies with certain countries' import regulations.</p>
+      
+      <p>📦 <strong>Container Loading Specifications</strong>
+      </br>
+      Container Type: 40-foot reefer container.<br>
+      Total Bags: Approximately 1,000 bags per container.<br>
+      Total Weight: Around 25,000 kg of semi-husked coconuts.<br>
+      Pallets: 20 pallets per container, with 50 bags each.<br>
+      Net Weight: Approximately 26,500 kg, accounting for pallet weight.</p>`,
+            
 
-      image: ["/assets/coconut-oil.jpg"],
+      image: [
+        "/assets/products/coconuts/coconut.jpg",
+        "/assets/products/coconuts/coconut_1.jpg",
+        "/assets/products/coconuts/coconut_2.jpg"
+      ],
       category: "coconut",
     },
     {
       id: 2,
-      name: "Coconut Flour",
-      description: "Gluten-free flour made from dried coconut meat.",
+      name: "Basmati Rice",
+      description: `
+      <p>Grown primarily in the northwestern regions of India — Punjab, Haryana, and Uttar Pradesh — 1121 Basmati Rice (White, Steam, Sella/Parboiled) is globally prized for its distinctive aroma, exceptional grain length, and elongation upon cooking. 
+      It is ideal for culinary excellence in biryanis and other premium rice dishes.</p>
 
-      image: ["/assets/coconut-flour.jpg"],
-      category: "coconut",
+      <p><strong>Uses</strong>: Cooking, Export, Retail, Horeca, Catering, Gourmet</p>
+
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Durable and economical packaging, suitable for bulk transport.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Premium printed packaging with high moisture resistance and a polished appearance, ideal for branding and retail.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Eco-friendly and breathable, offering traditional appeal and sustainable packaging solutions.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Custom sizes available as per buyer requirement)</p>
+
+      <p>📦 <strong>Container Loading Capacity</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,
+
+      image: ["/assets/products/rice/basmati_rice.png"],
+      category: "rice",
     },
     {
       id: 3,
-      name: "Coconut Sugar",
-      description: "Natural sweetener made from coconut palm sap.",
+      name: "IR64 Parboiled Rice",
+      description: `
+      <p>IR64 is one of the most exported varieties of parboiled rice from India. Cultivated primarily in Andhra Pradesh, Tamil Nadu, and Karnataka, it is known for its high yield, affordability, and non-sticky texture when cooked. It is widely used for everyday meals across several global markets.</p>
+      
+      <p><strong>Uses</strong>: Cooking, Export, Retail, Horeca, Bulk Supply</p>
+      
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Durable and cost-effective packaging, ideal for bulk shipments.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Attractive and moisture-proof, ideal for shelf display and retail branding.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Biodegradable and breathable packaging, environmentally sustainable.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Customizable as per buyer needs)</p>
+      
+      <p>📦 <strong>Container Loading Capacity</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,      
 
-      image: ["/assets/coconut-sugar.jpg"],
-      category: "coconut",
+      image: ["/assets/products/rice/ir64_rice.jpg"],
+      category: "rice",
     },
     {
       id: 4,
-      name: "Basmati Rice",
-      description: "Premium long-grain aromatic rice.",
-      image: ["/assets/basmati-rice.jpg"],
+      name: "IR36 Parboiled Rice",
+      description: `
+      <p>IR36 Parboiled Rice is a medium-grain rice variety known for its quick cooking properties and economic value. It is largely grown in Chhattisgarh and Odisha and serves as a staple in institutional kitchens, mid-day meals, and food relief programs.</p>
+      
+      <p><strong>Uses</strong>: Institutional, Bulk Cooking, Export, Retail, Government Supply</p>
+
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Cost-efficient and widely used for mass packaging and export.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Improves shelf life and presents better aesthetics for retail display.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Eco-conscious and traditional in style, preferred in certain markets.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Custom orders accepted)</p>
+      
+      <p>📦 <strong>Container Loading Capacity</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,      
+      image: ["/assets/products/rice/ir36_rice.jpg"],
       category: "rice",
     },
     {
       id: 5,
-      name: "Jasmine Rice",
-      description: "Fragrant rice with a subtle floral aroma.",
+      name: "Sona Masoori Rice",
+      description: `
+      <p>Sona Masoori Parboiled Rice is a lightweight, aromatic, and less starchy rice variety cultivated mostly in Karnataka, Andhra Pradesh, and Telangana. It is preferred for daily consumption in South Indian cuisine and is ideal for dishes like pongal, lemon rice, and tamarind rice.</p>
+     
+      <p><strong>Uses</strong>: Cooking, South Indian Cuisine, Retail, Export, Horeca</p>
+      
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Strong and durable, ideal for bulk exports.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Visually appealing, moisture-proof, and retail-ready packaging.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Sustainable and breathable, ideal for eco-conscious consumers.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Customizable)</p>
 
-      image: ["/assets/jasmine-rice.jpg"],
+      <p>📦 <strong>Container Loading Capacity</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,
+          
+      image: ["/assets/products/rice/sona_masuri_rice.png"],
       category: "rice",
     },
     {
       id: 6,
-      name: "Brown Rice",
-      description: "Whole grain rice with nutty flavor and chewy texture.",
+      name: "Matta Rice",
+      description: `
 
-      image: ["/assets/brown-rice.jpg"],
+      <p>Matta Rice, also known as Kerala Red Rice, is a nutrient-rich parboiled rice cultivated in the Palakkad district of Kerala. It retains the outer bran layer and has a distinct earthy flavor, making it a staple in Kerala cuisine. It's valued for its high fiber and mineral content.</p>
+      
+      <p><strong>Uses</strong>: Cooking, Kerala Cuisine, Health Food, Retail, Export</p>
+      
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Strong and widely accepted packaging for bulk distribution.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Premium look and excellent shelf-life for branded retail sale.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Eco-conscious packaging, ideal for organic and natural product stores.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Buyer-specific sizes available)</p>
+      
+      <p>📦 <strong>Container Loading Capacity</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,      
+
+      image: ["/assets/products/rice/matta_rice.png"],
       category: "rice",
     },
     {
       id: 7,
-      name: "Red Onions",
-      description: "Medium-sized onions with purple-red skin and mild flavor.",
-      image: ["/assets/red-onions.jpg"],
+      name: "Onions",
+      description: `
+      <p>Export-quality onions include varieties such as <b>Podisu Onion</b>, <b>Red Onion</b>, <b>White Onion</b>, <b>Krishnapuram Rose Onion</b>, and <b>Bangalore Rose Onion</b>. These onions are carefully graded and typically range in size from 45mm to 60mm, making them suitable for international markets and diverse culinary applications.</p>
+
+      <p><b>Uses</b>: Cooking, Export, Retail, Processing, Horeca</p>
+
+      <p><b>🧺 Types of Packing Materials</b><br>
+      <b>Mesh Bags</b><br>
+      Widely used for onion packaging, breathable and lightweight, available in 6kg, 10kg, and 20kg sizes depending on buyer requirements.<br>
+
+      <b>Customized Packing</b><br>
+      Packing can be tailored based on importing country regulations and client specifications.</p>
+      
+      <p><b>📦 Container Loading Specifications</b><br>
+      Container Type: Reefer Containers<br>
+      Temperature Range: 45–55°F<br>
+      Loading in 20ft Container: Approx. 12.5–13 Metric Tons<br>
+      Loading in 40ft Container: Approx. 28 Metric Tons</p>`,
+
+      image: [
+        "/assets/products/onions/onion.jpg",
+        "/assets/products/onions/onion_1.jpg"
+      ],
       category: "onion",
-    },
-    {
-      id: 8,
-      name: "Yellow Onions",
-      description:
-        "All-purpose onions with golden skin and sweet flavor when cooked.",
-
-      image: ["/assets/yellow-onions.jpg"],
-      category: "onion",
-    },
-    {
-      id: 9,
-      name: "Fresh Mangoes",
-      description: "Sweet, juicy tropical fruit with vibrant flavor.",
-
-      image: ["/assets/mangoes.jpg"],
-      category: "fruits",
-    },
-    {
-      id: 10,
-      name: "Bananas",
-      description: "Energy-rich fruit perfect for quick snacks.",
-
-      image: ["/assets/bananas.jpg"],
-      category: "fruits",
-    },
-    {
-      id: 11,
-      name: "Organic Quinoa",
-      description: "Protein-rich ancient grain with a nutty flavor.",
-      image: ["/assets/quinoa.jpg"],
-      category: "others",
-    },
-    {
-      id: 12,
-      name: "Organic Honey",
-      description: "Pure, unfiltered honey from wildflower meadows.",
-      image: ["/assets/honey.jpg"],
-      category: "others",
     },
 
     // Plates
@@ -442,12 +560,6 @@ const ProductsPage = () => {
               onClick={() => handleCategoryClick("onion")}
             >
               Onions
-            </button>
-            <button
-              className={activeCategory === "fruits" ? "active" : ""}
-              onClick={() => handleCategoryClick("fruits")}
-            >
-              Fruits
             </button>
             <button
               className={activeCategory === "plates" ? "active" : ""}

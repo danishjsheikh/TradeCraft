@@ -129,7 +129,7 @@ const ContactPage = () => {
                 <strong>Tel:</strong> <a href="tel:+918202575200">0820-2575200</a>
               </p>
               <p>
-                <strong>Email:</strong> <a href="mailto:morris@tradecraft.co.in">morris@tradecraft.co.in</a>
+                <strong>Email:</strong> <a href="mailto:trading@tradecraft.co.in">trading@tradecraft.co.in</a>
               </p>
             </div>
 

@@ -10,27 +10,101 @@ const HomePage = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Premium Coconut Oil",
-      description:
-        "Pure, organic virgin coconut oil extracted using traditional methods.",
-      origin: "Sri Lanka",
-      image: "/assets/coconut-oil.jpg",
+      name: "Semi Husked Coconuts",
+      description: `
+      <p>Semi husked coconuts are mature coconuts with the outer green husk partially removed, leaving the hard shell intact while retaining some of the fibrous coir. 
+      This makes them ideal for export as they are more compact than fully husked coconuts, while still offering protection to the inner shell and water content.
+      These coconuts are naturally rich in coconut water and have thick, firm white meat, making them ideal for various culinary and industrial purposes. 
+      They are harvested in a matured state and selected carefully for quality, weight, and shelf life.</p>
+      
+      <p><strong>Uses</strong>: Consumption, Cooking, Rituals, Cosmetics, Processing, Export</p>
+      
+      <p>🥥 <strong>Standard Export Packing Methods</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Capacity: Typically hold 25 coconuts per bag.<br>
+      Weight: Each bag weighs approximately 13–14 kg.<br>
+      Features: Durable, moisture-resistant, and suitable for long-distance transportation.
+      </br>
+      <strong>2. Gunny (Jute) Bags</strong><br>
+      Capacity: Also accommodate around 25 coconuts per bag.<br>
+      Weight: Similar to PP bags, each weighs about 13–14 kg.<br>
+      Features: Eco-friendly and breathable, allowing air circulation to prevent mold.
+      </br>
+      <strong>3. Palletized Packing</strong><br>
+      Configuration: Bags are stacked on wooden pallets, typically 50 bags per pallet.<br>
+      Container Load: A 40-foot reefer container can hold approximately 20 pallets, totaling around 1,000 bags or 25,000 kg of coconuts.<br>
+      Advantages: Facilitates easy loading/unloading and complies with certain countries' import regulations.</p>
+      
+      <p>📦 <strong>Container Loading Specifications</strong>
+      </br>
+      Container Type: 40-foot reefer container.<br>
+      Total Bags: Approximately 1,000 bags per container.<br>
+      Total Weight: Around 25,000 kg of semi-husked coconuts.<br>
+      Pallets: 20 pallets per container, with 50 bags each.<br>
+      Net Weight: Approximately 26,500 kg, accounting for pallet weight.</p>`,
+      image: [
+        "/assets/products/coconuts/coconut.jpg",
+        "/assets/products/coconuts/coconut_1.jpg",
+        "/assets/products/coconuts/coconut_2.jpg"
+      ],
+      category: "coconut",
     },
     {
       id: 2,
       name: "Basmati Rice",
-      description:
-        "Long-grain aromatic rice known for its distinctive flavor and aroma.",
-      origin: "India",
-      image: "/assets/basmati-rice.jpg",
+      description: `
+      <p>Grown primarily in the northwestern regions of India — Punjab, Haryana, and Uttar Pradesh — 1121 Basmati Rice (White, Steam, Sella/Parboiled) is globally prized for its distinctive aroma, exceptional grain length, and elongation upon cooking. 
+      It is ideal for culinary excellence in biryanis and other premium rice dishes.</p>
+
+      <p><strong>Uses</strong>: Cooking, Export, Retail, Horeca, Catering, Gourmet</p>
+
+      <p>🧺 <strong>Types of Packing Materials</strong>
+      </br>
+      <strong>1. PP (Polypropylene) Bags</strong><br>
+      Durable and economical packaging, suitable for bulk transport.
+      </br>
+      <strong>2. BOPP Laminated Bags</strong><br>
+      Premium printed packaging with high moisture resistance and a polished appearance, ideal for branding and retail.
+      </br>
+      <strong>3. Jute Bags</strong><br>
+      Eco-friendly and breathable, offering traditional appeal and sustainable packaging solutions.
+      </br>
+      <strong>Available Packing Sizes</strong>: 10 kg, 15 kg, 25 kg (Custom sizes available as per buyer requirement)</p>
+
+      <p>📦 <strong>Container Loading Specifications</strong><br>
+      Container Type: 20-foot container<br>
+      Load Capacity: Approx. 25 Metric Tons (MT)</p>`,
+
+      image: ["/assets/products/rice/basmati_rice.png"],
+      category: "rice",
     },
     {
       id: 3,
-      name: "Red Onions",
-      description:
-        "Fresh and crisp red onions with rich flavor perfect for any dish.",
-      origin: "Spain",
-      image: "/assets/red-onions.jpg",
+      name: "Onions",
+      description: `
+      <p>Export-quality onions include varieties such as <b>Podisu Onion</b>, <b>Red Onion</b>, <b>White Onion</b>, <b>Krishnapuram Rose Onion</b>, and <b>Bangalore Rose Onion</b>. These onions are carefully graded and typically range in size from 45mm to 60mm, making them suitable for international markets and diverse culinary applications.</p>
+
+      <p><b>Uses</b>: Cooking, Export, Retail, Processing, Horeca</p>
+
+      <p><b>🧺 Types of Packing Materials</b><br>
+      <b>Mesh Bags</b><br>
+      Widely used for onion packaging, breathable and lightweight, available in 6kg, 10kg, and 20kg sizes depending on buyer requirements.<br>
+
+      <b>Customized Packing</b><br>
+      Packing can be tailored based on importing country regulations and client specifications.</p>
+      
+      <p><b>📦 Container Loading Specifications</b><br>
+      Container Type: Reefer Containers<br>
+      Temperature Range: 45–55°F<br>
+      Loading in 20ft Container: Approx. 12.5–13 Metric Tons<br>
+      Loading in 40ft Container: Approx. 28 Metric Tons</p>`,
+
+      image: [
+        "/assets/products/onions/onion.jpg",
+        "/assets/products/onions/onion_1.jpg"
+      ],
+      category: "onion",
     },
   ];
 
