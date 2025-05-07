@@ -1,11 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Dialog, DialogContent, IconButton } from "@mui/material";
+import { Dialog, DialogContent, IconButton, useMediaQuery } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import "./CertificateCard.css";
 
 const CertificateCard = ({ certificate, delay = 0 }) => {
   const cardRef = useRef(null);
   const [open, setOpen] = useState(false);
+
+  // Check if the device is mobile (useMediaQuery with maxWidth)
+  const isMobile = useMediaQuery("(max-width:600px)");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,6 +36,16 @@ const CertificateCard = ({ certificate, delay = 0 }) => {
     };
   }, [delay]);
 
+  const handlePreviewClick = () => {
+    if (isMobile) {
+      // Open in a new tab if mobile
+      window.open(certificate.icon, "_blank");
+    } else {
+      // Otherwise, show dialog for desktop
+      setOpen(true);
+    }
+  };
+
   return (
     <>
       <div
@@ -40,7 +53,7 @@ const CertificateCard = ({ certificate, delay = 0 }) => {
         ref={cardRef}
         style={{ animationDelay: `${delay}ms` }}
       >
-        <div className="certificate-preview" onClick={() => setOpen(true)}>
+        <div className="certificate-preview" onClick={handlePreviewClick}>
           <iframe
             src={certificate.icon}
             title={certificate.name}

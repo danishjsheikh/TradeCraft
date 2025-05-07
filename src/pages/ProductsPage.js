@@ -568,16 +568,16 @@ const ProductsPage = () => {
               Plates
             </button>
             <button
-              className={activeCategory === "trays" ? "active" : ""}
-              onClick={() => handleCategoryClick("trays")}
-            >
-              Trays
-            </button>
-            <button
               className={activeCategory === "bowls" ? "active" : ""}
               onClick={() => handleCategoryClick("bowls")}
             >
               Bowls
+            </button>
+            <button
+              className={activeCategory === "trays" ? "active" : ""}
+              onClick={() => handleCategoryClick("trays")}
+            >
+              Trays
             </button>
           </div>
 

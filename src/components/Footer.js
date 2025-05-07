@@ -45,7 +45,7 @@ const Footer = () => {
           <h4>Products</h4>
           <ul>
             <li>
-              <Link to="/products#coconut">Coconut Products</Link>
+              <Link to="/products#coconut">Coconuts</Link>
             </li>
             <li>
               <Link to="/products#rice">Rice Varieties</Link>
@@ -54,10 +54,13 @@ const Footer = () => {
               <Link to="/products#onion">Onions</Link>
             </li>
             <li>
-              <Link to="/products#fruits">Fresh Fruits</Link>
+              <Link to="/products#plates">Plates</Link>
             </li>
             <li>
-              <Link to="/products#others">Other Food Products</Link>
+              <Link to="/products#bowls">Bowls</Link>
+            </li>
+            <li>
+              <Link to="/products#trays">Trays</Link>
             </li>
           </ul>
         </div>
@@ -66,13 +69,18 @@ const Footer = () => {
           <h4>Contact</h4>
           <ul className="contact-info">
             <li>
+            <p>
               <i className="fas fa-map-marker-alt"></i>{" "}
-              <p>
-                Maharashtra: 513, 5th Floor, Shree Samart Plaza, Gupta Bhavan,
-                RRT Road, Opp. Mulund West Railway Station, Mumbai 400080
-                <br />
-                Karnataka: GRACE, 265-4(3), Mangala Colony, Off Alevoor Road,
-                Manipal, Udupi District, Karnataka 576104.
+                <a href ="https://maps.app.goo.gl/PCS71F5oceQjBVs36" target="_blank">Maharashtra: 513, 5th Floor, Shree Samart Plaza, Gupta Bhavan,
+                RRT Road, Opp. Mulund West Railway Station, Mumbai 400080</a>
+                </p>
+            </li>
+            <li>
+              
+            <p>
+              <i className="fas fa-map-marker-alt"></i>{" "}
+              <a href ="https://maps.app.goo.gl/mc7J1QxbCYccL54M9" target="_blank">Karnataka: GRACE, 265-4(3), Mangala Colony, Off Alevoor Road,
+                Manipal, Udupi District, Karnataka 576104.</a>
               </p>
             </li>
             <li>
