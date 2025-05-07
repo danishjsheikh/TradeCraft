@@ -547,7 +547,7 @@ const ProductsPage = () => {
               className={activeCategory === "coconut" ? "active" : ""}
               onClick={() => handleCategoryClick("coconut")}
             >
-              Coconut Products
+              Coconuts
             </button>
             <button
               className={activeCategory === "rice" ? "active" : ""}
