@@ -10,6 +10,8 @@ import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
 import './App.css';
 import ScrollToTop from './ScrollToTop';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (

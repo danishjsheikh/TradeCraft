@@ -6,23 +6,20 @@ const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "250px", // Reduced height
 };
 
 const center = {
-  lat: 15.3173, // Center between Maharashtra and Karnataka
+  lat: 15.3173,
   lng: 75.7139,
 };
 
-// Coordinates for the two addresses
 const locations = [
   {
     position: { lat: 19.1738, lng: 72.956 }, // Mumbai
-    // label: "Maharashtra Office",
   },
   {
     position: { lat: 13.3531, lng: 74.785 }, // Manipal
-    // label: "Karnataka Office",
   },
 ];
 
@@ -72,10 +69,8 @@ const ContactPage = () => {
     const errors = validateForm();
 
     if (Object.keys(errors).length === 0) {
-      // Form is valid, submit it
       setFormSubmitted(true);
       setFormErrors({});
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -84,7 +79,6 @@ const ContactPage = () => {
         message: "",
       });
     } else {
-      // Form has errors
       setFormErrors(errors);
     }
   };
@@ -97,144 +91,249 @@ const ContactPage = () => {
           <p>Get in touch with our team for inquiries and support</p>
         </div>
       </div>
+
+      {/* Combined Contact & Form Section */}
       <section className="contact-section section">
-      <div className="container">
-        <div className="contact-grid-two-column">
-          {/* Left: Contact Info */}
-          <div className="contact-info-modern">
-            <h2>Get in Touch</h2>
-            <p>
-              We’re here to assist you with inquiries about our products,
-              services, or partnerships.
-            </p>
-
-            <div className="info-block">
-              <h3>Addresses</h3>
-              <p>
-                <strong>Maharashtra Office:</strong><br />
-                513, 5th Floor, Shree Samart Plaza, Gupta Bhavan, RRT Road, Opp. Mulund West Railway Station, Mumbai 400080
-              </p>
-              <p>
-                <strong>Karnataka Office:</strong><br />
-                GRACE, 265-4(3), Mangala Colony, Off Alevoor Road, Manipal, Udupi District, Karnataka 576104.
-              </p>
-            </div>
-
-            <div className="info-block">
-              <h3>Contact</h3>
-              <p>
-                <strong>Phone:</strong> <a href="tel:+919819830716">+91 9819830716</a>
-              </p>
-              <p>
-                <strong>Tel:</strong> <a href="tel:+918202575200">0820-2575200</a>
-              </p>
-              <p>
-                <strong>Email:</strong> <a href="mailto:trading@tradecraft.co.in">trading@tradecraft.co.in</a>
-              </p>
-            </div>
-
-            <div className="info-block">
-              <h3>Working Hours</h3>
-              <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
-              <p>Sat: 10:00 AM – 4:00 PM</p>
-            </div>
-          </div>
-
-          {/* Right: Maps */}
-          <div className="contact-maps">
-            <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
-              <div className="map-box">
-                <h4>Maharashtra Office</h4>
-                <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={locations[0].position}
-                  zoom={14}
-                >
-                  <Marker position={locations[0].position} />
-                </GoogleMap>
-              </div>
-              <div className="map-box">
-                <h4>Karnataka Office</h4>
-                <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={locations[1].position}
-                  zoom={14}
-                >
-                  <Marker position={locations[1].position} />
-                </GoogleMap>
-              </div>
-            </LoadScript>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-      <section className="about-section section">
         <div className="container">
-          <h2 className="section-title">About Tradecraft</h2>
-          <div className="about-content">
-            <div className="about-text">
-              <p>
-                TradeCraft is a newly established venture, our team brings with
-                it decades of hands-on experience in international trade and
-                export operations. We've navigated global markets, built strong
-                supply chains, and earned the trust of clients worldwide — and
-                now, we're channeling all of that into a fresh, focused
-                agri-export brand built for the future.
-              </p>
-              <p>
-                With a strong farmer network, modern logistics, and a
-                quality-first mindset, we look to serve all global destinations,
-                ensuring every shipment reflects the care, commitment, and
-                consistency it deserves.
-              </p>
-              <h3>Our Values</h3>
-              <ul>
-                <li>
-                  <strong>Quality:</strong> We are committed to providing only
-                  the highest quality products.
-                </li>
-                <li>
-                  <strong>Integrity:</strong> We conduct business with honesty
-                  and transparency.
-                </li>
-                <li>
-                  <strong>Sustainability:</strong> We promote environmentally
-                  responsible farming and trade practices.
-                </li>
-                <li>
-                  <strong>Innovation:</strong> We continuously seek better ways
-                  to serve our customers and partners.
-                </li>
-                <li>
-                  <strong>Partnership:</strong> We build strong, mutually
-                  beneficial relationships with our suppliers and customers.
-                </li>
-              </ul>
+          <div className="contact-content-wrapper">
+            {/* Left Column: Contact Info & Map */}
+            <div className="contact-info-column">
+              <div className="contact-info-card">
+                <h2>Get in Touch</h2>
+
+                <div className="info-blocks-wrapper">
+                  <div className="info-block">
+                    <div className="info-icon">
+                      <i className="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div className="info-content">
+                      <h3>Maharashtra Office</h3>
+                      <p>
+                        513, 5th Floor, Shree Samart Plaza, Gupta Bhavan,
+                        <br /> RRT Road, Opp. Mulund West Railway Station,
+                        <br /> Mumbai 400080
+                      </p>
+                      <div className="mini-map">
+                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
+                          <GoogleMap
+                            mapContainerStyle={containerStyle}
+                            center={locations[0].position}
+                            zoom={14}
+                          >
+                            <Marker position={locations[0].position} />
+                          </GoogleMap>
+                        </LoadScript>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="info-block">
+                    <div className="info-icon">
+                      <i className="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div className="info-content">
+                      <h3>Karnataka Office</h3>
+                      <p>
+                        GRACE, 265-4(3), Mangala Colony, Off Alevoor Road,
+                        <br /> Manipal, Udupi District, Karnataka 576104
+                      </p>
+                      <div className="mini-map">
+                        <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
+                          <GoogleMap
+                            mapContainerStyle={containerStyle}
+                            center={locations[1].position}
+                            zoom={14}
+                          >
+                            <Marker position={locations[1].position} />
+                          </GoogleMap>
+                        </LoadScript>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="contact-details-grid">
+                    <div className="info-block">
+                      <div className="info-icon">
+                        <i className="fas fa-phone-alt"></i>
+                      </div>
+                      <div className="info-content">
+                        <h3>Phone</h3>
+                        <p>
+                          <a href="tel:+919819830716">Mobile: +91 9819830716</a>
+                        </p>
+                        <p>
+                          <a href="tel:+918202575200"> Tel: 0820-2575200</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="info-block">
+                      <div className="info-icon">
+                        <i className="fas fa-envelope"></i>
+                      </div>
+                      <div className="info-content">
+                        <h3>Email</h3>
+                        <p>
+                          <a href="mailto:trading@tradecraft.co.in">
+                            trading@tradecraft.co.in
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="info-block">
+                      <div className="info-icon">
+                        <i className="fas fa-clock"></i>
+                      </div>
+                      <div className="info-content">
+                        <h3>Working Hours</h3>
+                        <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+                        <p>Sat: 10:00 AM – 4:00 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="about-images">
-              <div className="about-image">
-                <img src="/assets/farm_field.jpg" alt="farm" />
+
+            {/* Right Column: Contact Form & About */}
+            <div className="contact-form-column">
+              <div className="contact-form-card">
+                {formSubmitted ? (
+                  <div className="form-success">
+                    <i className="fas fa-check-circle"></i>
+                    <h2>Thank You!</h2>
+                    <p>
+                      Your message has been sent successfully. We'll get back to
+                      you shortly.
+                    </p>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="contact-form">
+                    <h2>Send Us a Message</h2>
+
+                    <div className="form-grid">
+                      <div className="form-group">
+                        <label htmlFor="name">Your Name*</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className={formErrors.name ? "error" : ""}
+                        />
+                        {formErrors.name && (
+                          <div className="error-message">{formErrors.name}</div>
+                        )}
+                      </div>
+
+                      <div className="form-group">
+                        <label htmlFor="email">Email Address*</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className={formErrors.email ? "error" : ""}
+                        />
+                        {formErrors.email && (
+                          <div className="error-message">
+                            {formErrors.email}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="form-grid">
+                      <div className="form-group">
+                        <label htmlFor="phone">Phone Number</label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                        />
+                      </div>
+
+                      <div className="form-group">
+                        <label htmlFor="subject">Subject</label>
+                        <input
+                          type="text"
+                          id="subject"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="form-group">
+                      <label htmlFor="message">Your Message*</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        value={formData.message}
+                        onChange={handleChange}
+                        className={formErrors.message ? "error" : ""}
+                      ></textarea>
+                      {formErrors.message && (
+                        <div className="error-message">
+                          {formErrors.message}
+                        </div>
+                      )}
+                    </div>
+
+                    <button type="submit" className="btn">
+                      Send Message
+                    </button>
+                  </form>
+                )}
               </div>
-              <div className="about-image">
-                <img
-                  src="/assets/workers.jpg"
-                  alt="Workers processing commodities"
-                />
-              </div>
-              <div className="about-image">
-                <img src="/assets/groceries.jpg" alt="Groceries" />
-              </div>
-              <div className="about-image">
-                <img src="/assets/quality.webp" alt="Quality inspection" />
+
+              <div className="about-summary-card">
+                <h2>About Tradecraft</h2>
+                <div className="about-summary-content">
+                  <div className="about-text-column">
+                    <p>
+                      TradeCraft is a newly established venture, bringing
+                      decades of experience in international trade and export
+                      operations. With a strong farmer network, modern
+                      logistics, and a quality-first mindset, we serve all
+                      global destinations.
+                    </p>
+                    <div className="value-tags">
+                      <span>Quality</span>
+                      <span>Integrity</span>
+                      <span>Sustainability</span>
+                      <span>Innovation</span>
+                      <span>Partnership</span>
+                    </div>
+                  </div>
+                  <div className="about-image-column">
+                    <div className="about-image-grid">
+                      <img src="/assets/farm_field.jpg" alt="Farm field" />
+                      {/* <img
+                        src="/assets/quality.webp"
+                        alt="Quality inspection"
+                      /> */}
+                      <img src="/assets/groceries.jpg" alt="Groceries" />
+                      <img
+                        src="/assets/workers.jpg"
+                        alt="Workers processing commodities"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      </div>
+    </div>
   );
 };
 

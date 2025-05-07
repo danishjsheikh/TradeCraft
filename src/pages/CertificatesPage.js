@@ -59,7 +59,7 @@ const CertificatesPage = () => {
                 <CertificateCard
                   key={certificate.id}
                   certificate={certificate}
-                  delay={index * 100}
+                  delay={index * 25}
                 />
               );
             })}

@@ -579,12 +579,6 @@ const ProductsPage = () => {
             >
               Bowls
             </button>
-            {/* <button 
-              className={activeCategory === 'bowls' ? 'active' : ''} 
-              onClick={() => handleCategoryClick('others')}
-            >
-              Other Products
-            </button> */}
           </div>
 
           <div className="products-grid">
@@ -592,7 +586,7 @@ const ProductsPage = () => {
               <ProductCard
                 key={product.id}
                 product={product}
-                delay={index * 100}
+                delay={index * 25}
               />
             ))}
           </div>
