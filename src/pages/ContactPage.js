@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ContactPage.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -24,65 +24,6 @@ const locations = [
 ];
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const [formErrors, setFormErrors] = useState({});
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const validateForm = () => {
-    let errors = {};
-
-    if (!formData.name.trim()) {
-      errors.name = "Name is required";
-    }
-
-    if (!formData.email.trim()) {
-      errors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errors.email = "Email is invalid";
-    }
-
-    if (!formData.message.trim()) {
-      errors.message = "Message is required";
-    }
-
-    return errors;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const errors = validateForm();
-
-    if (Object.keys(errors).length === 0) {
-      setFormSubmitted(true);
-      setFormErrors({});
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    } else {
-      setFormErrors(errors);
-    }
-  };
-
   return (
     <div className="contact-page">
       <div className="contact-hero">
@@ -92,7 +33,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Combined Contact & Form Section */}
+      {/* Combined Contact & About Section */}
       <section className="contact-section section">
         <div className="container">
           <div className="contact-content-wrapper">
@@ -196,136 +137,57 @@ const ContactPage = () => {
               </div>
             </div>
 
-            {/* Right Column: Contact Form & About */}
+            {/* Right Column: About Section (Expanded) */}
             <div className="contact-form-column">
-              <div className="contact-form-card">
-                {formSubmitted ? (
-                  <div className="form-success">
-                    <i className="fas fa-check-circle"></i>
-                    <h2>Thank You!</h2>
-                    <p>
-                      Your message has been sent successfully. We'll get back to
-                      you shortly.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="contact-form">
-                    <h2>Send Us a Message</h2>
-
-                    <div className="form-grid">
-                      <div className="form-group">
-                        <label htmlFor="name">Your Name*</label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          className={formErrors.name ? "error" : ""}
-                        />
-                        {formErrors.name && (
-                          <div className="error-message">{formErrors.name}</div>
-                        )}
-                      </div>
-
-                      <div className="form-group">
-                        <label htmlFor="email">Email Address*</label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          className={formErrors.email ? "error" : ""}
-                        />
-                        {formErrors.email && (
-                          <div className="error-message">
-                            {formErrors.email}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="form-grid">
-                      <div className="form-group">
-                        <label htmlFor="phone">Phone Number</label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          value={formData.phone}
-                          onChange={handleChange}
-                        />
-                      </div>
-
-                      <div className="form-group">
-                        <label htmlFor="subject">Subject</label>
-                        <input
-                          type="text"
-                          id="subject"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="message">Your Message*</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className={formErrors.message ? "error" : ""}
-                      ></textarea>
-                      {formErrors.message && (
-                        <div className="error-message">
-                          {formErrors.message}
-                        </div>
-                      )}
-                    </div>
-
-                    <button type="submit" className="btn">
-                      Send Message
-                    </button>
-                  </form>
-                )}
-              </div>
-
               <div className="about-summary-card">
                 <h2>About Tradecraft</h2>
                 <div className="about-summary-content">
-                  <div className="about-text-column">
-                    <p>
-                      TradeCraft is a newly established venture, bringing
-                      decades of experience in international trade and export
-                      operations. With a strong farmer network, modern
-                      logistics, and a quality-first mindset, we serve all
-                      global destinations.
-                    </p>
-                    <div className="value-tags">
-                      <span>Quality</span>
-                      <span>Integrity</span>
-                      <span>Sustainability</span>
-                      <span>Innovation</span>
-                      <span>Partnership</span>
+                  <p className="company-intro">
+                    TradeCraft is a newly established venture, bringing
+                    decades of experience in international trade and export
+                    operations. With a strong farmer network, modern
+                    logistics, and a quality-first mindset, we serve all
+                    global destinations.
+                  </p>
+                  
+                  <div className="info-boxes-container">
+                    <div className="company-mission">
+                      <h3>Our Mission</h3>
+                      <p>
+                        We aim to create sustainable value chains that benefit farmers, 
+                        processors, and consumers alike. By focusing on quality products 
+                        and ethical business practices, we're building trade relationships 
+                        that last for generations.
+                      </p>
+                    </div>
+                    
+                    <div className="company-vision">
+                      <h3>Our Vision</h3>
+                      <p>
+                        To become the leading agricultural export company known for 
+                        connecting premium Indian produce with global markets while 
+                        empowering local farming communities through fair trade practices 
+                        and sustainable agricultural methods.
+                      </p>
+                    </div>
+                    
+                    <div className="company-expertise">
+                      <h3>Our Expertise</h3>
+                      <p>
+                        With specialized knowledge in quality control, international 
+                        logistics, and regulatory compliance, we handle every aspect of 
+                        the export process. Our team's extensive experience ensures 
+                        smooth operations from farm to international destination.
+                      </p>
                     </div>
                   </div>
-                  <div className="about-image-column">
-                    <div className="about-image-grid">
-                      <img src="/assets/farm_field.jpg" alt="Farm field" />
-                      {/* <img
-                        src="/assets/quality.webp"
-                        alt="Quality inspection"
-                      /> */}
-                      <img src="/assets/groceries.jpg" alt="Groceries" />
-                      <img
-                        src="/assets/workers.jpg"
-                        alt="Workers processing commodities"
-                      />
-                    </div>
+                  
+                  <div className="value-tags">
+                    <span>Quality</span>
+                    <span>Integrity</span>
+                    <span>Sustainability</span>
+                    <span>Innovation</span>
+                    <span>Partnership</span>
                   </div>
                 </div>
               </div>
