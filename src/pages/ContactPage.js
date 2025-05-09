@@ -33,11 +33,11 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Combined Contact & About Section */}
-      <section className="contact-section section">
+      {/* Contact Section - Now Full Width */}
+      <section className="contact-section section" style={{ paddingBottom: "0" }}>
         <div className="container">
           <div className="contact-content-wrapper">
-            {/* Left Column: Contact Info & Map */}
+            {/* Full Width: Contact Info & Map */}
             <div className="contact-info-column">
               <div className="contact-info-card">
                 <h2>Get in Touch</h2>
@@ -93,7 +93,7 @@ const ContactPage = () => {
                   </div>
 
                   <div className="contact-details-grid">
-                    <div className="info-block">
+                    <div className="info-block contact-detail-item">
                       <div className="info-icon">
                         <i className="fas fa-phone-alt"></i>
                       </div>
@@ -108,7 +108,7 @@ const ContactPage = () => {
                       </div>
                     </div>
 
-                    <div className="info-block">
+                    <div className="info-block contact-detail-item">
                       <div className="info-icon">
                         <i className="fas fa-envelope"></i>
                       </div>
@@ -122,7 +122,7 @@ const ContactPage = () => {
                       </div>
                     </div>
 
-                    <div className="info-block">
+                    <div className="info-block contact-detail-item">
                       <div className="info-icon">
                         <i className="fas fa-clock"></i>
                       </div>
@@ -136,59 +136,63 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* Right Column: About Section (Expanded) */}
-            <div className="contact-form-column">
-              <div className="about-summary-card">
-                <h2>About Tradecraft</h2>
-                <div className="about-summary-content">
-                  <p className="company-intro">
-                    TradeCraft is a newly established venture, bringing
-                    decades of experience in international trade and export
-                    operations. With a strong farmer network, modern
-                    logistics, and a quality-first mindset, we serve all
-                    global destinations.
-                  </p>
-                  
-                  <div className="info-boxes-container">
-                    <div className="company-mission">
-                      <h3>Our Mission</h3>
-                      <p>
-                        We aim to create sustainable value chains that benefit farmers, 
-                        processors, and consumers alike. By focusing on quality products 
-                        and ethical business practices, we're building trade relationships 
-                        that last for generations.
-                      </p>
-                    </div>
-                    
-                    <div className="company-vision">
-                      <h3>Our Vision</h3>
-                      <p>
-                        To become the leading agricultural export company known for 
-                        connecting premium Indian produce with global markets while 
-                        empowering local farming communities through fair trade practices 
-                        and sustainable agricultural methods.
-                      </p>
-                    </div>
-                    
-                    <div className="company-expertise">
-                      <h3>Our Expertise</h3>
-                      <p>
-                        With specialized knowledge in quality control, international 
-                        logistics, and regulatory compliance, we handle every aspect of 
-                        the export process. Our team's extensive experience ensures 
-                        smooth operations from farm to international destination.
-                      </p>
-                    </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* About Section - Now Full Width and Below Contact with reduced spacing */}
+      <section className="about-section section">
+        <div className="container">
+          <div className="about-content-wrapper">
+            <div className="about-summary-card">
+              <h2>About Tradecraft</h2>
+              <div className="about-summary-content">
+                <p className="company-intro">
+                  TradeCraft is a newly established venture, bringing
+                  decades of experience in international trade and export
+                  operations. With a strong farmer network, modern
+                  logistics, and a quality-first mindset, we serve all
+                  global destinations.
+                </p>
+                
+                <div className="info-boxes-container">
+                  <div className="company-mission">
+                    <h3>Our Mission</h3>
+                    <p>
+                      We aim to create sustainable value chains that benefit farmers, 
+                      processors, and consumers alike. By focusing on quality products 
+                      and ethical business practices, we're building trade relationships 
+                      that last for generations.
+                    </p>
                   </div>
                   
-                  <div className="value-tags">
-                    <span>Quality</span>
-                    <span>Integrity</span>
-                    <span>Sustainability</span>
-                    <span>Innovation</span>
-                    <span>Partnership</span>
+                  <div className="company-vision">
+                    <h3>Our Vision</h3>
+                    <p>
+                      To become the leading agricultural export company known for 
+                      connecting premium Indian produce with global markets while 
+                      empowering local farming communities through fair trade practices 
+                      and sustainable agricultural methods.
+                    </p>
                   </div>
+                  
+                  <div className="company-expertise">
+                    <h3>Our Expertise</h3>
+                    <p>
+                      With specialized knowledge in quality control, international 
+                      logistics, and regulatory compliance, we handle every aspect of 
+                      the export process. Our team's extensive experience ensures 
+                      smooth operations from farm to international destination.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="value-tags">
+                  <span>Quality</span>
+                  <span>Integrity</span>
+                  <span>Sustainability</span>
+                  <span>Innovation</span>
+                  <span>Partnership</span>
                 </div>
               </div>
             </div>
