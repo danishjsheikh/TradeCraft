@@ -51,8 +51,8 @@ const ContactPage = () => {
                       <h3>Maharashtra Office</h3>
                       <p>
                         513, 5th Floor, Shree Samart Plaza, Gupta Bhavan,
-                        <br /> RRT Road, Opp. Mulund West Railway Station,
-                        <br /> Mumbai 400080
+                        RRT Road, Opp. Mulund West Railway Station,
+                        Mumbai 400080
                       </p>
                       <div className="mini-map">
                         <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
@@ -76,7 +76,7 @@ const ContactPage = () => {
                       <h3>Karnataka Office</h3>
                       <p>
                         GRACE, 265-4(3), Mangala Colony, Off Alevoor Road,
-                        <br /> Manipal, Udupi District, Karnataka 576104
+                        Manipal, Udupi District, Karnataka 576104
                       </p>
                       <div className="mini-map">
                         <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
