@@ -50,9 +50,11 @@ const ContactPage = () => {
                     <div className="info-content">
                       <h3>Maharashtra Office</h3>
                       <p>
+                        <a href ="https://maps.app.goo.gl/PCS71F5oceQjBVs36" target="_blank">
                         513, 5th Floor, Shree Samart Plaza, Gupta Bhavan,
                         RRT Road, Opp. Mulund West Railway Station,
                         Mumbai 400080
+                        </a>
                       </p>
                       <div className="mini-map">
                         <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
@@ -75,8 +77,10 @@ const ContactPage = () => {
                     <div className="info-content">
                       <h3>Karnataka Office</h3>
                       <p>
+                        <a href ="https://maps.app.goo.gl/mc7J1QxbCYccL54M9" target="_blank">
                         GRACE, 265-4(3), Mangala Colony, Off Alevoor Road,
                         Manipal, Udupi District, Karnataka 576104
+                        </a>
                       </p>
                       <div className="mini-map">
                         <LoadScript googleMapsApiKey={GOOGLE_API_KEY}>
