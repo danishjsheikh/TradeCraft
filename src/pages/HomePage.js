@@ -91,14 +91,18 @@ const HomePage = () => {
       <b>Mesh Bags</b><br>
       Widely used for onion packaging, breathable and lightweight, available in 6kg, 10kg, and 20kg sizes depending on buyer requirements.<br>
 
+      <b>Master Packing with Palletization</b><br>
+      Palletized packing in containers can be provided for the UK and other destinations as per buyer requirements.<br>
+
       <b>Customized Packing</b><br>
-      Packing can be tailored based on importing country regulations and client specifications.</p>
+      Packing can be tailored based on importing country regulations and client specifications.<br>
       
       <p><b>📦 Container Loading Specifications</b><br>
       Container Type: Reefer Containers<br>
       Temperature Range: 45–55°F<br>
       Loading in 20ft Container: Approx. 12.5–13 Metric Tons<br>
-      Loading in 40ft Container: Approx. 28 Metric Tons</p>`,
+      Loading in 40ft Container: Approx. 28 Metric Tons</p>
+      `,
 
       image: [
         "/assets/products/onions/onion.jpg",
@@ -235,7 +239,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="testimonials-section section">
+      {/* <section className="testimonials-section section">
         <div className="container">
           <h2 className="section-title">What Our Clients Say</h2>
           <div className="testimonials-slider">
@@ -271,7 +275,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

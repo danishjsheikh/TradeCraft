@@ -7,36 +7,36 @@ const CertificatesPage = () => {
     {
       id: 1,
       name: "APEDA Certification",
-      description:
-        "Our products are certified organic, ensuring they are grown without synthetic pesticides or fertilizers.",
+      // description:
+      //   "Our products are certified organic, ensuring they are grown without synthetic pesticides or fertilizers.",
       icon: "/certificates/APEDA_CERTIFICATE.pdf",
     },
     {
       id: 2,
       name: "Avina Udyam",
-      description:
-        "Recognized for excellence and innovation under the Avina Udyam Certification, empowering growth and sustainability in enterprises.",
+      // description:
+      //   "Recognized for excellence and innovation under the Avina Udyam Certification, empowering growth and sustainability in enterprises.",
       icon: "/certificates/AVINA_UDYAM.pdf",
     },
     {
       id: 3,
       name: "Tradecraft GST Certificate",
-      description:
-        "Officially registered under the Goods and Services Tax (GST) regime, enabling compliant and transparent business operations.",
+      // description:
+      //   "Officially registered under the Goods and Services Tax (GST) regime, enabling compliant and transparent business operations.",
       icon: "/certificates/TRADECRAFT_GST_CERTIFICATE.pdf",
     },
     {
       id: 4,
       name: "Tradecraft IEC",
-      description:
-        "Authorized with an Importer Exporter Code (IEC) for conducting international trade operations.",
+      // description:
+      //   "Authorized with an Importer Exporter Code (IEC) for conducting international trade operations.",
       icon: "/certificates/TRADECRAFT_IEC.pdf",
     },
     {
       id: 5,
       name: "FSSAI License",
-      description:
-        "Authorized with FSSAI for food safety and Standards.",
+      // description:
+      //   "Authorized with FSSAI for food safety and Standards.",
       icon: "/certificates/FSSAI LICENSE.pdf",
     },
   ];
