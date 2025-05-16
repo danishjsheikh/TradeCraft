@@ -2,7 +2,7 @@ import React from "react";
 import "./ContactPage.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const containerStyle = {
   width: "100%",
