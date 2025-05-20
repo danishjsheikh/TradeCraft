@@ -54,13 +54,7 @@ const Footer = () => {
               <Link to="/products#onion">Onions</Link>
             </li>
             <li>
-              <Link to="/products#plates">Plates</Link>
-            </li>
-            <li>
-              <Link to="/products#bowls">Bowls</Link>
-            </li>
-            <li>
-              <Link to="/products#trays">Trays</Link>
+              <Link to="/products#areca_leaf_products"> Areca Leaf Products</Link>
             </li>
           </ul>
         </div>

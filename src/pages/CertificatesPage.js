@@ -13,7 +13,7 @@ const CertificatesPage = () => {
     },
     {
       id: 2,
-      name: "Avina Udyam",
+      name: "Udyam Certificate",
       // description:
       //   "Recognized for excellence and innovation under the Avina Udyam Certification, empowering growth and sustainability in enterprises.",
       icon: "/certificates/AVINA_UDYAM.pdf",
@@ -38,6 +38,13 @@ const CertificatesPage = () => {
       // description:
       //   "Authorized with FSSAI for food safety and Standards.",
       icon: "/certificates/FSSAI LICENSE.pdf",
+    },
+    {
+      id: 6,
+      name: "Coconut Development Board Certificate",
+      // description:
+      //   "Authorized with FSSAI for food safety and Standards.",
+      icon: "/certificates/Coconut_Development_Board.pdf",
     },
   ];
 

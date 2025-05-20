@@ -242,7 +242,7 @@ const ProductsPage = () => {
               "/assets/products/plates/round_plate_12.webp",
               "/assets/products/plates/round_plate_12_1.webp"
             ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 14,
@@ -258,7 +258,7 @@ const ProductsPage = () => {
         "/assets/products/plates/round_plate_10.webp",
         "/assets/products/plates/round_plate_10_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 15,
@@ -271,7 +271,7 @@ const ProductsPage = () => {
         "assets/products/plates/square_plate_10_10.webp",
         "assets/products/plates/square_plate_10_10_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 16,
@@ -286,7 +286,7 @@ const ProductsPage = () => {
         "/assets/products/plates/round_plate_9.webp",
         "/assets/products/plates/round_plate_9_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 17,
@@ -299,7 +299,7 @@ const ProductsPage = () => {
         "/assets/products/plates/square_plate_9_9.webp",
         "/assets/products/plates/square_plate_9_9_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 18,
@@ -314,7 +314,7 @@ const ProductsPage = () => {
         "/assets/products/plates/round_plate_8.webp",
         "/assets/products/plates/round_plate_8_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 19,
@@ -327,7 +327,7 @@ const ProductsPage = () => {
         "/assets/products/plates/square_plate_8_8.webp",
         "/assets/products/plates/square_plate_8_8_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 20,
@@ -342,7 +342,7 @@ const ProductsPage = () => {
         "/assets/products/plates/round_plate_7.webp",
         "/assets/products/plates/round_plate_7_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 21,
@@ -355,7 +355,7 @@ const ProductsPage = () => {
         "/assets/products/plates/square_plate_7_7.webp",
         "/assets/products/plates/square_plate_7_7_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 22,
@@ -370,7 +370,7 @@ const ProductsPage = () => {
         "/assets/products/plates/rectangle_plate_7_8.5_1.webp",
         "/assets/products/plates/rectangle_plate_7_8.5_2.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 23,
@@ -383,7 +383,7 @@ const ProductsPage = () => {
         "/assets/products/plates/square_plate_6_6.webp",
         "/assets/products/plates/square_plate_6_6_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
     {
       id: 24,
@@ -396,7 +396,7 @@ const ProductsPage = () => {
         "/assets/products/plates/square_plate_4_4.webp",
         "/assets/products/plates/square_plate_4_4_1.webp"
       ],
-      category: "plates",
+      category: "areca_leaf_products",
     },
 
     // Bowls
@@ -411,7 +411,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/square_bowl_8_8.webp",
         "/assets/products/bowls/square_bowl_8_8_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 26,
@@ -424,7 +424,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/rectangle_bowl_6.5.webp",
         "/assets/products/bowls/rectangle_bowl_6.5_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 27,
@@ -437,7 +437,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/round_bowl_5.webp",
         "/assets/products/bowls/round_bowl_5_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 28,
@@ -450,7 +450,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/deep_square_bowl_4_4.webp",
          "/assets/products/bowls/deep_square_bowl_4_4_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 29,
@@ -463,7 +463,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/deep_bowl_4_4.webp",
          "/assets/products/bowls/deep_bowl_4_4_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 30,
@@ -476,7 +476,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/square_bowl_3_3.webp",
          "/assets/products/bowls/square_bowl_3_3_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
     {
       id: 31,
@@ -489,7 +489,7 @@ const ProductsPage = () => {
         "/assets/products/bowls/round_bowl_3.5.webp",
          "/assets/products/bowls/round_bowl_3.5_1.webp"
       ],
-      category: "bowls",
+      category: "areca_leaf_products",
     },
 
     // Tray
@@ -504,7 +504,7 @@ const ProductsPage = () => {
         "/assets/products/trays/rectangle_tray_6_9.webp",
          "/assets/products/trays/rectangle_tray_6_9_1.webp"
       ],
-      category: "trays",
+      category: "areca_leaf_products",
     },
   ];
 
@@ -567,22 +567,10 @@ const ProductsPage = () => {
               Onions
             </button>
             <button
-              className={activeCategory === "plates" ? "active" : ""}
-              onClick={() => handleCategoryClick("plates")}
+              className={activeCategory === "areca_leaf_products" ? "active" : ""}
+              onClick={() => handleCategoryClick("areca_leaf_products")}
             >
-              Plates
-            </button>
-            <button
-              className={activeCategory === "bowls" ? "active" : ""}
-              onClick={() => handleCategoryClick("bowls")}
-            >
-              Bowls
-            </button>
-            <button
-              className={activeCategory === "trays" ? "active" : ""}
-              onClick={() => handleCategoryClick("trays")}
-            >
-              Trays
+              Areca Leaf Products
             </button>
           </div>
 
